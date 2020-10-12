@@ -159,12 +159,6 @@ namespace AutomationIntroduction
 }
 /*
 
-22.	Afisati al doilea element din urmatorul array: “sun”, “moon”, “clouds”.
-23.	Afisati cherry din urmatorul array: “lemons”, “watermelon”, “cherry”
-24.	Afisati array-ul in ordine inversa: “mom”, “dad”, “child”.
-25.	Afisati array-ul sortat: “mom”, “dad”,( “child”.
-26.	Cititi de la tastatura elementele unui array de marime 5. (string)
-27.	Cititi de la tastatura elementele unui array de marime 5.(int)
 
 
  * 1.	Cititi de la tastatura un numar. Verificati daca numarul este egal cu 20. In cazul in care este, afisati mesajul “Numarul tau este egal cu 20!
@@ -184,9 +178,6 @@ namespace AutomationIntroduction
 15.	Cititi de la tastatura un caracter. Daca acel caracter este litera afisati mesajul :”Caracterul *caracter* este litera!”. In cazul in care este o cifra afisati mesajul :”Caracterul *caracter* este o cifra!”. In cazul contrar afisati mesajul: “Caracterul *caracter* nu este nici cifra nici litera
 16.	Cititi de la tastatura o ora a zilei. In cazul in care ora respectiva este mai mica de 12 afisati: “Buna dimineata!”. Daca ora este mai mica decat 17 afisati mesajul: “Buna ziua!”. In caz contrar afisati mesajul :”Buna seara!”
 17.	Cititi de la tastatura o inaltime a unei persoane in cm si afisati: daca inaltimea este <150 cm afisati: “Aceasta persoana este miniona”, daca inaltimea este intre 150 si 165, afisati mesajul: “Aceasta persoana este mica de statura”. Daca inaltimea este intre 165 si <195 afisati mesajul:”Aceasta persoana este inalta”. In caz contrar afisati :”Aceasta persoana este foarte inalta”.
-
-
-
 
 18.	Cititi 3 numere de la tastatura si afisati cel mai mare numar.
 19.	Cititi de la tastatura 2 numere. Faceti un calculator care sa accepte operatiile +,-,*,/ si sa afiseze rezultatul: 
