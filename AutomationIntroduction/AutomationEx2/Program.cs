@@ -11,13 +11,15 @@ namespace AutomationEx2
                 //NumberMethod();
                 //StringMethod();
                 //CharMethod();
-                HourMethod();
+                //HourMethod();
+                //CompareThreeNumbers();
+                PersonHeight();
             }
             catch (FormatException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-           
+
             catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
@@ -32,6 +34,46 @@ namespace AutomationEx2
                 Console.ReadLine();
             }
 
+        }
+
+        private static void PersonHeight()
+        {
+            //Cititi de la tastatura o inaltime a unei persoane in cm si afisati: daca inaltimea este <150 cm afisati:
+            //“Aceasta persoana este miniona”, daca inaltimea este intre 150 si 165, afisati mesajul:
+            //“Aceasta persoana este mica de statura”. Daca inaltimea este intre 165 si <195 afisati mesajul:
+            //”Aceasta persoana este inalta”. In caz contrar afisati :”Aceasta persoana este foarte inalta”.
+            Console.WriteLine("Input the height of a person in cm:");
+            int height = int.Parse(Console.ReadLine());
+            if (height < 20 || height > 300) throw new ArgumentException("Your input is beyond the limit");
+            if (height < 150) Console.WriteLine("Aceasta persoana este miniona");
+            else if (height < 165) Console.WriteLine("Aceasta persoana este mica de statura");
+                else if (height < 195) Console.WriteLine("Aceasta persoana este inalta");
+                    else Console.WriteLine("Aceasta persoana este foarte inalta"); 
+
+        }
+
+        private static void CompareThreeNumbers()
+        {
+           Console.WriteLine("Input three numbers:");
+            int[] arr = new int[3];
+            int max = int.MinValue;
+            for (int i = 0; i < 3; i++)
+            {   
+                arr[i] = InputNr();
+                if (i == 0)
+                { max = arr[i];
+                    continue;
+                }
+                if (arr[i] > max) max = arr[i];
+            }
+            Console.WriteLine($"Maximum value is: {max}");
+        }
+
+        private static int InputNr()
+        {
+            Console.WriteLine("Number:");
+            int nr = int.Parse(Console.ReadLine());
+            return nr;
         }
 
         private static void HourMethod()
@@ -152,8 +194,6 @@ namespace AutomationEx2
  * 
 
 
-.	Cititi de la tastatura o inaltime a unei persoane in cm si afisati: daca inaltimea este <150 cm afisati: “Aceasta persoana este miniona”, daca inaltimea este intre 150 si 165, afisati mesajul: “Aceasta persoana este mica de statura”. Daca inaltimea este intre 165 si <195 afisati mesajul:”Aceasta persoana este inalta”. In caz contrar afisati :”Aceasta persoana este foarte inalta”.
-
-18.	Cititi 3 numere de la tastatura si afisati cel mai mare numar.
+.	
 19.	Cititi de la tastatura 2 numere. Faceti un calculator care sa accepte operatiile +,-,*,/ si sa afiseze rezultatul: 
 */
